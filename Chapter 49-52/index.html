@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter #49-52</title>
+</head>
+<body>
+    <!-- Question 1  -->
+    <!-- <form id="form" >
+        <label  for="">First Name:</label>
+        <input class="printValues" type="text" name="" id="1"> <br> <br>
+        <label for="">Last Name:</label>
+        <input class="printValues" type="text" name="" id="2"> <br> <br>
+        <label for="">Email:</label>
+        <input class="printValues" type="text" name="" id="3"> <br> <br>
+        <label for="">Password:</label>
+        <input class="printValues" type="text" name="" id="4"> <br> <br>
+       <input type="submit" onclick="showMessage(); return false">
+    </form>
+    <br> <br>
+
+    <p id="print"></p> -->
+
+    <!-- Question 2  -->
+    <!-- <p id="paragraph">
+        JavaScript, often abbreviated as JS, is a programming language that conforms 
+        to the ECMAScript specification.
+         JavaScript is high-level, often just-in-time compiled, and multi-paradigm.
+         <a href="javascript:void(0);" onclick="readMore()">Read More</a>
+    </p> -->
+
+    <!-- Question 3  -->
+    <!-- <table id = "myTable" border="1px">
+        <tr>
+            <th>Index</th>
+        <th>Name</th>
+        <th>Class</th>
+        <th colspan="2">Operation</th>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>Umair ul islam</td>
+            <td>12</td>
+            <td class="dlt"><button onclick="myFunction(this)">Delete</button></td>
+            <td class="edt"><button onclick="edit()">Edit</button></td>
+        </tr>
+        <tr>
+                <td>1</td>
+            <td>Ahmed</td>
+            <td>11</td>
+            <td class="dlt"><button onclick="myFunction(this)">Delete</button></td>
+            <td class="edt"><button onclick="edit()">Edit</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+    <td>Hussain</td>
+    <td>09</td>
+    <td class="dlt"><button onclick="myFunction(this)">Delete</button></td>
+    <td class="edt"><button onclick="edit()">Edit</button></td>
+        </tr>
+        <tr>
+            <td>3</td>
+    <td>Harry</td>
+    <td>7</td>
+    <td class="dlt"><button onclick="myFunction(this)">Delete</button></td>
+    <td class="edt"><button onclick="edit()">Edit</button></td>
+        </tr>
+</table> -->
+<div id="wrapper">
+    <table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+    <tr>
+    <th>Name</th>
+    <th>Country</th>
+    <th>Age</th>
+    </tr>
+    
+    <tr id="row1">
+    <td id="name_row1">Ankit</td>
+    <td id="country_row1">India</td>
+    <td id="age_row1">20</td>
+    <td>
+    <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+    <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+    <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+    </td>
+    </tr>
+    
+    <tr id="row2">
+    <td id="name_row2">Shawn</td>
+    <td id="country_row2">Canada</td>
+    <td id="age_row2">26</td>
+    <td>
+    <input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+    <input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+    <input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+    </td>
+    </tr>
+    
+    <tr id="row3">
+    <td id="name_row3">Rahul</td>
+    <td id="country_row3">India</td>
+    <td id="age_row3">19</td>
+    <td>
+    <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+    <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+    <input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+    </td>
+    </tr>
+    
+    <tr>
+    <td><input type="text" id="new_name"></td>
+    <td><input type="text" id="new_country"></td>
+    <td><input type="text" id="new_age"></td>
+    <td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+    </tr>
+    
+    </table>
+    </div>
+</body>
+
+<script src="app.js"></script>
+</html>
